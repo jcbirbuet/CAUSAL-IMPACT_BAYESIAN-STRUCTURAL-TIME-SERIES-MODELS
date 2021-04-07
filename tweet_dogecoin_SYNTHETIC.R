@@ -25,7 +25,7 @@ doge <- riingo_crypto_prices(
   end_date = end_analysis, resample_frequency = '1min'
 ) %>% mutate(crypto = 'Dogecoin')
 
-# obtenemos datos de Bitcoin, Litecoin, Cardano también en usd, estas series se emplearán para construir el contrafactual
+# obtenemos datos de Bitcoin, Litecoin, Cardano y Ethereum también en usd, estas series se emplearán para construir el contrafactual
 
 bit <- riingo_crypto_prices(
     'btcusd', start_date = start_analysis, # si se quiere en euros es btceur 
